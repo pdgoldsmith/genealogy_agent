@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genealogy-agent"
+version = "0.3.0"
+description = "Provider-agnostic genealogy research agent scaffold for OpenAI and Claude"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+ocr = ["kraken>=5.3"]
+
+[tool.setuptools]
+packages = ["genealogy_agent", "genealogy_agent.providers", "genealogy_agent.tools"]
